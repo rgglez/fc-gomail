@@ -15,5 +15,5 @@ The message must have this structure, in JSON:
    "Subject":"The subject of the message",
    "Body":"The body of the message"
 }
-```javascript
+```json
 
