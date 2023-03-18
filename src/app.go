@@ -48,10 +48,10 @@ func main() {
 		conf := config{}
 		cfg := conf.load()
 
-		smtpHost := fmt.Sprint(cfg["SENDMETRIC"].(map[string]interface{})["HOST"])
-		smtpPort, _ := strconv.Atoi(fmt.Sprint(cfg["SENDMETRIC"].(map[string]interface{})["PORT"]))
-		smtpLogin := fmt.Sprint(cfg["SENDMETRIC"].(map[string]interface{})["LOGIN"])
-		smtpPassword := fmt.Sprint(cfg["SENDMETRIC"].(map[string]interface{})["PASSWORD"])
+		smtpHost := fmt.Sprint(cfg["SMTP"].(map[string]interface{})["HOST"])
+		smtpPort, _ := strconv.Atoi(fmt.Sprint(cfg["SMTP"].(map[string]interface{})["PORT"]))
+		smtpLogin := fmt.Sprint(cfg["SMTP"].(map[string]interface{})["LOGIN"])
+		smtpPassword := fmt.Sprint(cfg["SMTP"].(map[string]interface{})["PASSWORD"])
 
 		body, err := ioutil.ReadAll(r.Body)
 		if err != nil {
