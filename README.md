@@ -22,21 +22,18 @@ The message sent to Aliyun MNS must have this structure, in JSON:
 The configuration, in the case of the code in this repository, is based in a YAML file, which is loaded into a variable map. The structure of the relevant part of the YAML must be like this:
 
 ```yaml
-SENDMETRIC:
-  HOST: smtp.sendmetric.com
+SMTP:
+  HOST: smtp.yourserver.com
   PORT: 2525
   LOGIN: <your login>
   PASSWORD: <your password>
 ```
-
-Of course, you can replace the Sendmetric service with any SMTP server which supports Plain Authentication. I use Sendmetric because nowadays services like Gmail or Outlook tend to block or discard incoming messages from "non secure" servers (they are very strict), and most cloud providers block outgoing SMTP from FaaS or virtual servers.
 
 ## Notes
 
 * A sample *Dockerfile* in provided, which you might adjust to your use case.
 * A sample *Makefile* to compile the Go code is provided, which you might adjust to your use case.
 * Aliyun refers to Alibaba Cloud Services, but this code can be easily adapted to run in AWS Lambda, for instance.
-* I am **not** affiliated in any way to Sendmetric nor to Intertune Cloud. I found their API handy for some of my projects. You should check if their service suits your use case, both technically and legally. Also, I'm not responsible for the quality or fitness of their service. Use it at your own risk ;)
 
 ## License
 
