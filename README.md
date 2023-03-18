@@ -29,7 +29,7 @@ SENDMETRIC:
   PASSWORD: <your password>
 ```
 
-Of course, you can replace the Sendmetric service with any SMTP server which supports Plain Authentication, or implement your own Auth method, as supported by Gomail. I use Sendmetric because nowadays services like Gmail or Outlook tend to block or discard messages, and cloud providers block outgoing SMTP from FaaS or virtual servers.
+Of course, you can replace the Sendmetric service with any SMTP server which supports Plain Authentication. I use Sendmetric because nowadays services like Gmail or Outlook tend to block or discard incoming messages from "non secure" servers (they are very strict), and most cloud providers block outgoing SMTP from FaaS or virtual servers.
 
 ## Notes
 
