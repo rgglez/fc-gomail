@@ -33,7 +33,7 @@ SMTP:
 
 * A sample *Dockerfile* in provided, which you might adjust to your use case.
 * A sample *Makefile* to compile the Go code is provided, which you might adjust to your use case.
-* The Makefile uses "handler" as the name of the compiled binary, so you must either use this name in your FC configuration, or make changes accordingly.
+* The *Makefile* uses "handler" as the name of the compiled binary, so you must either use this name in your FC configuration, or make changes accordingly.
 * Aliyun refers to Alibaba Cloud Services, but this code can be easily adapted to run in AWS Lambda, for instance.
 
 ## License
