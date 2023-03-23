@@ -19,7 +19,9 @@ The message sent to Aliyun MNS must have this structure, in JSON:
 
 ## Configuration
 
-The configuration, in the case of the code in this repository, is based in a YAML file, which is loaded into a variable map. The structure of the relevant part of the YAML must be like this:
+The configuration, in the case of the code in this repository, is based in a YAML file, which is loaded into a variable map. 
+
+The structure of the relevant part of the YAML must be like this:
 
 ```yaml
 SMTP:
@@ -28,6 +30,17 @@ SMTP:
   LOGIN: <your login>
   PASSWORD: <your password>
 ```
+
+The load might look like this:
+
+```go
+conf := config{} 
+cfg := conf.load()
+```
+
+Where conf is an struct and cfg the map containing the loaded YAML.
+
+Of course, feel free to change this part as you need.
 
 ## Notes
 
