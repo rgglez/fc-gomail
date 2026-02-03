@@ -51,6 +51,6 @@ Of course, feel free to change this part as you need.
 
 ## License
 
-Copyright (c) 2023, Rodolfo González González.
+Copyright (c) 2026, Rodolfo González González.
 
 Read the LICENSE file.
